@@ -7,3 +7,5 @@ CLI usage:
 ```
 ./blogbot serve --rpcport 2000 --httpport 80
 ```
+
+![demo](demo.gif)
