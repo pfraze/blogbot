@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+var nomnom = require('nomnom');
+
+nomnom.script('blogbot').nocolors()
+nomnom.command('serve')
+  .help('Starts the blogbot server.')
+  .options({
+    rpcport: {
+      help: 'Sets the port for the rpc server.',
+      default: 2000
+    },
+    httpport: {
+      help: 'Sets the port for the rpc server.',
+      default: 8000
+    }
+  })
+  .callback(require('./lib/index').start);
+nomnom.parse();
