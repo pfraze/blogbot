@@ -1,6 +1,7 @@
 {
   "name": "blogbot",
   "dependencies": {
+    "hyperscript": "~1.4.2",
     "nomnom": "1.8.0",
     "pull-stream": "~2.24.1"
   },
